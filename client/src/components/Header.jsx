@@ -1,5 +1,4 @@
 import { Navbar, Button } from "flowbite-react";
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { TextInput } from "flowbite-react";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -13,7 +12,11 @@ export default function Header() {
         to="/"
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
-        <span className="px-2 py-1 bg-gradient-to-r from-blue-500 via-pink-500 to-orange-300 rounded-lg text-white">
+        <span
+          className="px-2.5 py-2 bg-gradient-to-r from-pink-500 
+        to-orange-400
+        rounded-lg  text-white"
+        >
           Spiritual tree
         </span>
       </Link>
@@ -30,10 +33,14 @@ export default function Header() {
       </Button>
 
       <div className="flex gap-2 md:order-2">
-        <Button gradientDuoTone="purpleToBlue" pill>
+        <Button Button className="w-12 h-10 hidden sm:inline" color="gray" pill>
           <FaMoon></FaMoon>
         </Button>
-        <Link to="/sign-in">Sign in</Link>
+        <Link to="/sign-in">
+          <Button gradientDuoTone="pinkToOrange" outline>
+            Sign In
+          </Button>
+        </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>

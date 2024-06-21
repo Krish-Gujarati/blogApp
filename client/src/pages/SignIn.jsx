@@ -49,7 +49,10 @@ export default function SignIn() {
         {/* left */}
         <div className="flex-1">
           <Link to="/" className="font-bold dark:text-white text-4xl">
-            <span className="px-2 py-1 bg-gradient-to-r from-pink-500 to-orange-400 rounded-lg text-white  ">
+            <span
+              className="px-2 py-1 bg-gradient-to-r from-teal-400 to-lime-300 rounded-lg "
+              style={{ color: "black" }}
+            >
               Spiritual tree
             </span>
           </Link>
@@ -81,7 +84,7 @@ export default function SignIn() {
               />
             </div>
             <Button
-              gradientDuoTone="redToYellow"
+              gradientDuoTone="tealToLime"
               type="submit"
               disabled={loading}
             >

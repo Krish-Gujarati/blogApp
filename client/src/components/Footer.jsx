@@ -10,12 +10,13 @@ export default function FooterCom() {
           <div className="mt-5">
             <Link
               to="/"
-              className="self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white"
+              className="self-center whitespace-nowrap text-lg sm:text-xl font-bold dark:text-white"
             >
               <span
-                className="px-2.5 py-2 bg-gradient-to-r from-pink-500 
-        to-orange-400
-        rounded-lg  text-white"
+                className="px-2.5 py-2 bg-gradient-to-r from-teal-400 
+        to-lime-300
+        rounded-lg"
+                style={{ color: "black" }}
               >
                 Spiritual tree
               </span>
@@ -25,11 +26,7 @@ export default function FooterCom() {
             <div>
               <Footer.Title title="About" />
               <Footer.LinkGroup col>
-                <Footer.Link
-                  href="https://www.100jsprojects.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Footer.Link href="/" target="_blank" rel="noopener noreferrer">
                   Author
                 </Footer.Link>
                 <Footer.Link

@@ -222,7 +222,7 @@ export default function DashProfile() {
           placeholder="password"
           onChange={handleChange}
         />
-        <Button type="submit" gradientDuoTone="purpleToBlue" outline>
+        <Button type="submit" gradientDuoTone="pinkToOrange" outline>
           Update
         </Button>
       </form>

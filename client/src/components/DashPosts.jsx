@@ -72,7 +72,20 @@ export default function DashPosts() {
   };
 
   return (
-    <div className='table-auto overflow-x-scroll md:mx-auto p-3 scrollbar scrollbar-track-slate-100 scrollbar-thumb-slate-300 dark:scrollbar-track-slate-700 dark:scrollbar-thumb-slate-500'>
+    <div className='table-auto overflow-x-scroll md:mx-auto p-3 scrollbar scrollbar-track-slate-100 scrollbar-thumb-slate-300 dark:scrollbar-track-slate-700 dark:scrollbar-thumb-slate-500' style={{"margin-top":"30px"}}>
+      {currentUser.isAdmin && (
+          <Link to={'/create-post'}>
+            <Button
+              type='button'
+              gradientDuoTone='pinkToOrange'
+              className='w-full'
+              outline
+            >
+              Create a post
+            </Button>
+          </Link>
+        )}
+    <div style={{"margin-top":"30px"}}>
       {currentUser.isAdmin && userPosts.length > 0 ? (
         <>
           <Table hoverable className='shadow-md'>
@@ -145,6 +158,7 @@ export default function DashPosts() {
       ) : (
         <p>You have no posts yet!</p>
       )}
+    </div>
       <Modal
         show={showModal}
         onClose={() => setShowModal(false)}

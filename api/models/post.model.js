@@ -18,11 +18,10 @@ const postSchema = new mongoose.Schema(
     image: {
       type: String,
       default:
-        'https://himalayanyoganepal.com/wp-content/uploads/2024/04/0_NAO_PgvPvUk6MN3a.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6JDFFIwWT0twVyfxvRslASNNdu2L_pfqSBw&s',
     },
     category: {
       type: String,
-      default: 'uncategorized',
     },
     slug: {
       type: String,

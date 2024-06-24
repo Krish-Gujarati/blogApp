@@ -129,10 +129,13 @@ export default function UpdatePost() {
             }
             value={formData.category}
           >
-            <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>JavaScript</option>
-            <option value='reactjs'>React.js</option>
-            <option value='nextjs'>Next.js</option>
+            <option value="uncategorized">Select a category</option>
+            <option value="bhakti">Bhakti</option>
+            <option value="Mind management">Mind management</option>
+            <option value="Karma yoga">Karma yoga</option>
+            <option value="holistic health">Holistic health</option>
+            <option value="time management">time management</option>
+
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
@@ -143,7 +146,7 @@ export default function UpdatePost() {
           />
           <Button
             type='button'
-            gradientDuoTone='purpleToBlue'
+            gradientDuoTone='pinkToOrange'
             size='sm'
             outline
             onClick={handleUpdloadImage}
@@ -179,7 +182,7 @@ export default function UpdatePost() {
             setFormData({ ...formData, content: value });
           }}
         />
-        <Button type='submit' gradientDuoTone='purpleToPink'>
+        <Button type='submit' gradientDuoTone='greenToBlue' outline>
           Update post
         </Button>
         {publishError && (

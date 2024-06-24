@@ -54,7 +54,7 @@ export default function SignUp() {
             </span>
           </Link>
           <p className="text-sm mt-5">
-            This is a demo project. You can sign up with your email and password
+            You can sign up with your email and password
             or with Google.
           </p>
         </div>
@@ -90,9 +90,10 @@ export default function SignUp() {
               />
             </div>
             <Button
-              gradientDuoTone="tealToLime"
+              gradientDuoTone="greenToBlue"
               type="submit"
               disabled={loading}
+              outline
             >
               {loading ? (
                 <Spinner size="sm">

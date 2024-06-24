@@ -106,6 +106,9 @@ export default function CreatePost() {
             <option value="bhakti">Bhakti</option>
             <option value="Mind management">Mind management</option>
             <option value="Karma yoga">Karma yoga</option>
+            <option value="holistic health">Holistic health</option>
+            <option value="time management">time management</option>
+
           </Select>
         </div>
         <div className="flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3">
@@ -151,7 +154,7 @@ export default function CreatePost() {
             setFormData({ ...formData, content: value });
           }}
         />
-        <Button type="submit" gradientDuoTone="tealToLime" outline>
+        <Button type="submit" gradientDuoTone="greenToBlue" outline>
           Publish
         </Button>
         {publishError && (
